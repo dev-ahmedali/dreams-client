@@ -5,7 +5,7 @@ import FileBase from "react-file-base64";
 import useStyles from "./styles";
 
 const Form = () => {
-  const { postData, setPostData } = useState({
+  const [ postData, setPostData ] = useState({
     creator: "",
     title: "",
     message: "",
@@ -22,7 +22,7 @@ const Form = () => {
       <form
         autoComplete="off"
         noValidate
-        className={classes.form}
+        className={`${classes.root} ${classes.form}`}
         onSubmit={handleSubmit}
       >
         <Typography variant="h6">Creating a Dreams</Typography>
