@@ -20,7 +20,7 @@ const Form = () => {
   const handleSubmit = (e) => {
     e.preventDefualt();
 
-    dispatch(createPost(postData))
+    dispatch(createPost(postData));
   };
 
   const clear = () => {};
